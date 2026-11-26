@@ -60,3 +60,59 @@ worked
 Each model integration needs its own input contract.
 Model parameters cannot be assumed to be interchangeable.
 Unsupported seeds must be logged as null.
+
+## F004 — Gemini TTS rate limiting
+
+### Problem
+
+Narration generation appeared to stall on shot_009
+and subsequently on shot_010.
+
+### Root cause
+
+The Gemini SDK received HTTP 429 Too Many Requests.
+Its internal retry mechanism entered a backoff sleep,
+making the pipeline appear unresponsive.
+
+The exact quota threshold was not established.
+
+### Resolution
+
+Interrupted the stalled requests and retried the
+affected shots individually.
+
+Both shots were eventually generated successfully.
+
+Previously generated narration files were preserved
+through artifact-level caching.
+
+### Lesson
+
+Provider SDK retries can interact with application-level
+retry mechanisms and obscure request progress.
+
+Independent artifact caching makes partial pipeline
+failures recoverable without repeating successful work.
+
+### Status
+
+Resolved for the current narration batch.
+
+### Verified resolution
+
+Installed FFmpeg 7.0.2-static and FFprobe inside
+the project's .venv/bin directory.
+
+Verified support for:
+- amix normalization
+- sidechaincompress
+- loudnorm
+- subtitles
+
+Successfully rendered the 87-second radio cut.
+
+The system FFmpeg installation remained unchanged.
+
+### Status
+
+Resolved.

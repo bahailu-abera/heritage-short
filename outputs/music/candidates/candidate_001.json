@@ -1,0 +1,19 @@
+{
+  "cache_key": "5197d93c3cb36fda65f854a2dae33151545eb716f448510bf5dee26b9ebfa881",
+  "parameters": {
+    "id": "candidate_001",
+    "seed": 201,
+    "bpm": 75,
+    "caption": "Cinematic Ethiopian heritage instrumental soundtrack. Gentle krar-inspired plucked strings, soft acoustic piano, warm ambient textures, subtle traditional percussion. Nostalgic rural childhood opening, gradually building emotional determination, hopeful inspirational ending. Restrained arrangement for documentary narration. No vocals.",
+    "model": "acestep-v15-turbo",
+    "revision": "ca1e85fe9430179831e6bc6be790c332190a3866",
+    "duration": 90,
+    "instrumental": true,
+    "inference_steps": 8,
+    "guidance_scale": 1.0,
+    "shift": 3.0,
+    "thinking": false
+  },
+  "output_sha256": "6d31b1113c8dd832fbdc62c0b2fb15c972fd5989ad8ae9a619621760b6c4523f",
+  "duration_seconds": 90.0
+}

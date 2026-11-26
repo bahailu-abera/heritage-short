@@ -1,0 +1,72 @@
+[
+  {
+    "shot_id": "shot_001",
+    "backend": "ffmpeg",
+    "duration_seconds": 7.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_001.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_002",
+    "backend": "ffmpeg",
+    "duration_seconds": 8.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_002.mp4",
+    "cached": false
+  },
+  {
+    "shot_id": "shot_003",
+    "backend": "ffmpeg",
+    "duration_seconds": 9.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_003.mp4",
+    "cached": false
+  },
+  {
+    "shot_id": "shot_004",
+    "backend": "ffmpeg",
+    "duration_seconds": 8.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_004.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_005",
+    "backend": "ffmpeg",
+    "duration_seconds": 10.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_005.mp4",
+    "cached": false
+  },
+  {
+    "shot_id": "shot_006",
+    "backend": "ffmpeg",
+    "duration_seconds": 8.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_006.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_007",
+    "backend": "ffmpeg",
+    "duration_seconds": 8.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_007.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_008",
+    "backend": "ffmpeg",
+    "duration_seconds": 9.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_008.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_009",
+    "backend": "ffmpeg",
+    "duration_seconds": 8.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_009.mp4",
+    "cached": true
+  },
+  {
+    "shot_id": "shot_010",
+    "backend": "ffmpeg",
+    "duration_seconds": 9.0,
+    "output_path": "/home/bahailu/Documents/heritage-short/outputs/shots/shot_010.mp4",
+    "cached": true
+  }
+]

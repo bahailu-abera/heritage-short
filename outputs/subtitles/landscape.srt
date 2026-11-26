@@ -1,0 +1,46 @@
+1
+00:00:00,100 --> 00:00:06,900
+My story began in a small farming village in rural Ethiopia.
+
+2
+00:00:07,100 --> 00:00:14,900
+At just seven years old, I spent long days working beside my mother in the fields.
+
+3
+00:00:15,100 --> 00:00:23,900
+During school breaks, we pulled weeds and harvested teff and wheat. The work was
+exhausting.
+
+4
+00:00:24,100 --> 00:00:31,900
+Life was not easy, but I believed education could change our future.
+
+5
+00:00:32,100 --> 00:00:41,900
+When I ranked first in my school in the Grade 8 national exam, my mother sacrificed
+even more so I could continue studying.
+
+6
+00:00:42,100 --> 00:00:49,900
+At sixteen, I left my village to study. But during school breaks, I always returned
+to our farm.
+
+7
+00:00:50,100 --> 00:00:57,900
+At Addis Ababa University, I discovered computers, programming and artificial
+intelligence.
+
+8
+00:00:58,100 --> 00:01:06,900
+For the first time, I saw our fields differently. Technology could distinguish weeds
+from crops.
+
+9
+00:01:07,100 --> 00:01:14,900
+I imagined machines identifying weeds, helping harvest crops and reducing farmers'
+exhausting labor.
+
+10
+00:01:15,100 --> 00:01:23,900
+My journey began in the soil. My dream is to use technology to make the next
+generation's journey easier.

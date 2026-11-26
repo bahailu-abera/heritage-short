@@ -1,0 +1,24 @@
+{
+  "shot_id": "shot_010",
+  "cache_key": "d46428547fb2ad6268813238939eff8d1f5c234d63edbe1bb7ab34833eb43212",
+  "output_sha256": "bc0122bbe96cc428c87e1c9cbea7cf33b99766f34de82672857daba481f5a518",
+  "parameters": {
+    "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "width": 512,
+    "height": 288,
+    "num_frames": 49,
+    "fps": 16,
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "precision": "float16",
+    "vae_precision": "float32",
+    "offload_strategy": "sequential",
+    "prompt": "Powerful cinematic rear three-quarter view of a strong twenty-two-year-old Ethiopian adult man standing confidently overlooking the rural farmland where his childhood began. Tall athletic physique, broad masculine shoulders, strong arms and upright posture. Show part of his mature facial profile. Golden sunset, green fields extending toward distant hills. Quiet hopeful atmosphere, centered subject, emotionally powerful closing composition.. Slow camera pull backward revealing the surrounding fields, gentle wind in the crops, warm sunset light. Preserve the original characters' ages, facial features, body proportions and clothing. Natural cinematic movement, consistent lighting, stable environment and realistic human motion.",
+    "negative_prompt": null,
+    "seed": 310,
+    "keyframe_sha256": "1c52581348b23ee2143ea1fbbbc79fe56415868367f837e5f1936772e2d99223",
+    "effective_seed": 310
+  },
+  "duration_seconds": 3.0625,
+  "backend": "wan"
+}

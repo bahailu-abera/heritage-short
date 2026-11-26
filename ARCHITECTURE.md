@@ -1,68 +1,90 @@
 # Architecture
 
-## Pipeline contract
+## Overview
 
-storyboard.json is the shared contract between all
-generation and assembly stages.
+The application is a modular Python pipeline for generating short narrated films from a structured storyboard.
 
-JSON Schema validates structural constraints.
-Python validation enforces film duration, unique IDs,
-character dependencies and music cue relationships.
+```text
+storyboard.json
+       |
+       v
+Schema validation
+       |
+       +--------------------+
+       |                    |
+Character references    Narration
+       |                    |
+       v                    |
+    Keyframes               |
+       |                    |
+       v                    |
+ Moving shots          Selected music
+       |                    |
+       +---------+----------+
+                 |
+                 v
+           FFmpeg assembly
+                 |
+        +--------+--------+
+        |                 |
+      16:9               9:16
+```
 
-## Model integration
+## Stage contracts
 
-Provider-specific request construction is isolated
-from pipeline stage logic.
+| Stage | Inputs | Outputs |
+|---|---|---|
+| References | Character descriptions, seeds and visual style | Character PNGs |
+| Narration | Narration text and voice settings | Per-shot WAV files |
+| Keyframes | Image prompts, style and references | Per-shot PNG files |
+| Shots | Keyframes, motion parameters and optional Wan clips | Duration-normalized MP4 clips |
+| Music | Music direction and approved candidate | Selected soundtrack |
+| Assembly | Video clips, narration, soundtrack and subtitles | Final MP4 exports |
 
-Model names and API versions are configurable.
+## Validation
 
-## Caching
+The storyboard is validated using JSON Schema and additional business rules. These include unique identifiers, valid character references, supported aspect ratios, shot timing constraints and total film duration.
 
-Artifacts are cached independently by stage and
-artifact ID.
+## Content-based caching
 
-Cache keys use SHA-256 hashes derived from:
+Each cache key is derived from the generation stage, model identifier, parameters and content hashes of input dependencies.
 
-- Model identifier
-- Effective generation parameters
-- Upstream artifact contents
-- Cache implementation version
+An artifact is reused only when its cache key and output hash match the recorded manifest.
 
-Output hashes are stored in cache manifests to detect
-missing or modified artifacts.
+Changing a shot prompt invalidates the corresponding keyframe and video artifact. The final assembly is invalidated because one of its inputs has changed.
 
-Only successful, validated artifacts are cached.
+## Provider abstraction
 
-Changing narration should not invalidate visual assets
-when shot timing remains unchanged.
+External model integrations are separated from stage orchestration.
+
+Gemini handles speech generation, Cloudflare handles image generation, and Kaggle runs Wan and ACE-Step.
+
+The Wan provider validates imported clips using their manifests, seeds, prompts and keyframe hashes before allowing reuse.
 
 ## Failure handling
 
-Transient API failures use bounded exponential
-backoff with jitter.
+Network-dependent generation uses bounded retries for transient errors.
 
-Invalid requests and authentication failures are
-not automatically retried.
+Artifacts are written to temporary files before replacing approved outputs. Invalid or stale Wan artifacts are rejected.
 
-GPU memory and quota failures will be handled through
-stage-specific recovery and alternative backends.
+FFmpeg animation provides a deterministic alternative to GPU-intensive video generation.
 
 ## Observability
 
-Model attempts are logged individually in runs.jsonl.
+Model calls are recorded in runs.jsonl. Records capture available model identifiers, parameters, seeds, latency, GPU measurements, status and errors.
 
-Logs distinguish model calls, failures, scheduled
-retries and cache hits.
+Unknown costs remain null rather than being represented as verified zero-cost inference.
 
-Actual costs and estimated commercial costs are
-recorded separately.
+## Final assembly
 
-## Current limitations
+Each video shot is normalized to its storyboard duration. Narration is padded to the corresponding shot duration. The soundtrack is attenuated using sidechain compression while narration is present.
 
-The cache retains one current manifest per artifact.
+English subtitles and the AI disclosure end card are rendered during export.
 
-Concurrent generation of the same artifact is
-not supported.
+## Limitations
 
-Provider inference and end-to-end regeneration
-still require integration testing.
+Remote GPU jobs and soundtrack selection require manual intervention. The local pipeline consumes their approved artifacts.
+
+The portrait export adapts horizontal compositions using a blurred background rather than generating native vertical keyframes.
+
+The cache is designed for sequential execution. Distributed execution and concurrent cache writes are not currently supported.

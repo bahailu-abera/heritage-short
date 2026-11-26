@@ -29,7 +29,7 @@ class Settings:
 
     image_model: str = os.getenv(
         "IMAGE_MODEL",
-        "@cf/black-forest-labs/flux-1-schnell",
+        "@cf/black-forest-labs/flux-2-klein-4b",
     )
 
     video_model: str = os.getenv(

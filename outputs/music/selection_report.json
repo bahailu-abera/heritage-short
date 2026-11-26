@@ -1,0 +1,7 @@
+{
+  "model": "ACE-Step 1.5",
+  "backend": "imported",
+  "path": "outputs/music/selected.wav",
+  "duration_seconds": 90.0,
+  "sha256": "6d31b1113c8dd832fbdc62c0b2fb15c972fd5989ad8ae9a619621760b6c4523f"
+}

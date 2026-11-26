@@ -1,0 +1,11 @@
+[
+  {
+    "shot_id": "shot_010",
+    "path": "outputs/narration/shot_010.wav",
+    "planned_seconds": 8,
+    "actual_seconds": 8.11,
+    "remaining_seconds": -0.11,
+    "status": "overflow",
+    "cached": false
+  }
+]

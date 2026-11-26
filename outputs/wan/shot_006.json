@@ -1,0 +1,24 @@
+{
+  "shot_id": "shot_006",
+  "cache_key": "32f8cd60f678f9c9fb18e3a73642611b36718d44857746178696c7f26fb7efcf",
+  "output_sha256": "fdcaa48228396db975ff711a805aabd1eed695325462f32c66f6aa76ad5438ab",
+  "parameters": {
+    "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "width": 512,
+    "height": 288,
+    "num_frames": 49,
+    "fps": 16,
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "precision": "float16",
+    "vae_precision": "float32",
+    "offload_strategy": "sequential",
+    "prompt": "Wide cinematic full-body rear three-quarter view of a tall sixteen-year-old Ethiopian teenage male student carrying a worn backpack along a rural dirt road. Lean adolescent physique, long legs and youthful shoulders. Village and fields behind him, distant hills ahead, soft morning sunlight. Central composition.. The student walks slowly away from the village, camera follows gently from behind. Preserve the original characters' ages, facial features, body proportions and clothing. Natural cinematic movement, consistent lighting, stable environment and realistic human motion.",
+    "negative_prompt": null,
+    "seed": 306,
+    "keyframe_sha256": "268e33a79d0330cabd337b8addaf36d4318be356940d292b2d5ef16062b2b953",
+    "effective_seed": 306
+  },
+  "duration_seconds": 3.0625,
+  "backend": "wan"
+}

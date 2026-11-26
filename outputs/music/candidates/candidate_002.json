@@ -1,0 +1,19 @@
+{
+  "cache_key": "b817ce3aad3e83a8e6be3fa7bb60aad3ffd6a06b77764542f5fafda9c92efc93",
+  "parameters": {
+    "id": "candidate_002",
+    "seed": 202,
+    "bpm": 72,
+    "caption": "Intimate emotional Ethiopian documentary instrumental. Soft masenqo-inspired bowed strings, delicate acoustic plucking, warm piano and atmospheric pads. Reflective opening, emotional middle, gentle uplifting resolution. Sparse arrangement, suitable beneath spoken narration. No singing or vocals.",
+    "model": "acestep-v15-turbo",
+    "revision": "ca1e85fe9430179831e6bc6be790c332190a3866",
+    "duration": 90,
+    "instrumental": true,
+    "inference_steps": 8,
+    "guidance_scale": 1.0,
+    "shift": 3.0,
+    "thinking": false
+  },
+  "output_sha256": "d0b56c0773b755db535b591927d3214208ba22635e39a8d93a7381f95b2c4d5e",
+  "duration_seconds": 90.0
+}

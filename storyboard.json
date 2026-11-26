@@ -1,205 +1,223 @@
-
 {
-    "version": "1.0",
-    "film": {
-      "title": "From Soil to Silicon",
-      "title_local": "ከአፈር ወደ ቴክኖሎጂ",
-      "language": "am",
-      "subtitle_language": "en",
-      "audience": "Ethiopian families, students and diaspora",
-      "intent": "Honor family sacrifice and inspire hope through education and agricultural technology"
+  "version": "1.0",
+  "film": {
+    "title": "From Soil to Silicon",
+    "title_local": "ከአፈር ወደ ቴክኖሎጂ",
+    "language": "am",
+    "subtitle_language": "en",
+    "audience": "Ethiopian families, students and diaspora",
+    "intent": "Honor family sacrifice and inspire hope through education and agricultural technology"
+  },
+  "visual_style": {
+    "description": "Cinematic realism, natural lighting, subtle film grain, authentic Ethiopian rural environments, realistic anatomy and culturally appropriate clothing",
+    "composition": "Landscape composition with essential subjects inside the central vertical safe area. No text, captions or watermarks requested in generated imagery.",
+    "width": 1024,
+    "height": 576
+  },
+  "characters": [
+    {
+      "id": "boy_child",
+      "description": "A fictional Ethiopian male child, exactly seven years old. Clearly recognizable as a small elementary-school-aged child. Short stature, small frame, narrow shoulders, round youthful face, soft cheeks, small jaw, large expressive brown eyes, dark brown skin, short tightly curled black hair. Wearing a faded beige shirt and simple brown trousers. Innocent, curious and hardworking appearance. Authentic rural Ethiopian childhood.",
+      "reference_image": "assets/references/boy_child.png",
+      "seed": 101
     },
-    "visual_style": {
-      "description": "Cinematic realism, natural lighting, subtle film grain, authentic Ethiopian rural environments, realistic anatomy and culturally appropriate clothing",
-      "composition": "Landscape composition with essential subjects inside the central vertical safe area. No text, captions or watermarks requested in generated imagery.",
-      "width": 1024,
-      "height": 576
-    },
-    "characters": [
-      {
-        "id": "boy_child",
-        "description": "Fictional seven-year-old Ethiopian boy, dark brown skin, short curly black hair, oval face, expressive brown eyes, slim build, simple faded beige shirt and brown trousers",
-        "reference_image": "assets/references/boy_child.png",
-        "seed": 101
-      },
-      {
+    {
         "id": "boy_teenager",
-        "description": "Fictional sixteen-year-old Ethiopian student, dark brown skin, short curly black hair, oval face, expressive brown eyes, slim build, modest school clothes and a worn backpack",
+        "description": "A fictional sixteen-year-old Ethiopian male high school student in late adolescence. Tall, approximately 175 cm, with a lean athletic physique developed through years of agricultural labor. Long limbs, moderately broad shoulders, defined cheekbones, developing masculine jawline, mature adolescent facial proportions, dark brown skin, expressive brown eyes and short tightly curled black hair. Clean-shaven face. Wearing a simple button-up shirt and carrying a worn school backpack. He has the physical appearance of an older high school student approaching adulthood, not a prepubescent child. Confident, independent and determined expression.",
         "reference_image": "assets/references/boy_teenager.png",
-        "seed": 102
+        "seed": 152
       },
-      {
-        "id": "adult_student",
-        "description": "Fictional young Ethiopian university student, dark brown skin, short curly black hair, oval face, expressive brown eyes, slim build, simple casual university clothes",
-        "reference_image": "assets/references/adult_student.png",
-        "seed": 103
-      },
-      {
-        "id": "mother",
-        "description": "Fictional Ethiopian farming mother, dark brown skin, kind expressive face, practical modest clothing, traditional light cotton headscarf, hardworking and dignified appearance",
-        "reference_image": "assets/references/mother.png",
-        "seed": 104
-      }
-    ],
-    "narration": {
-      "voice": "Kore",
-      "style": "Natural Amharic pronunciation, warm reflective autobiographical storytelling, gentle pacing, restrained emotion"
+    {
+      "id": "adult_student",
+      "description": "A fictional Ethiopian twenty-two-year-old adult man. Clearly a fully grown young adult with a strong masculine appearance, tall stature, athletic naturally muscular build, broad shoulders, strong neck, well-defined masculine jawline, mature angular facial structure, expressive brown eyes, dark brown skin and short tightly curled black hair. Subtle natural facial stubble. Confident, intelligent and physically mature. Wearing fitted but modest casual university clothing. Must unmistakably look like a twenty-two-year-old adult man, not a teenage boy or child.",
+      "reference_image": "assets/references/adult_student.png",
+      "seed": 103
     },
-    "music": {
-      "prompt": "Original Ethiopian-inspired cinematic instrumental score with gentle krar plucked strings, expressive masenqo textures, subtle percussion, spacious arrangement and a gradual emotional transition from nostalgia to hope",
-      "instrumental": true,
-      "bpm": 75,
-      "seed": 201,
-      "cues": [
-        {
-          "start_shot": "shot_001",
-          "end_shot": "shot_004",
-          "mood": "Reflective, nostalgic and slightly melancholic"
-        },
-        {
-          "start_shot": "shot_005",
-          "end_shot": "shot_007",
-          "mood": "Determined, gradually building with warmth"
-        },
-        {
-          "start_shot": "shot_008",
-          "end_shot": "shot_010",
-          "mood": "Hopeful, uplifting and emotionally resolved"
-        }
-      ]
+    {
+      "id": "mother",
+      "description": "Fictional Ethiopian farming mother, dark brown skin, kind expressive face, practical modest clothing, traditional light cotton headscarf, hardworking and dignified appearance",
+      "reference_image": "assets/references/mother.png",
+      "seed": 104
+    }
+  ],
+  "narration": {
+    "voice": "Algenib",
+    "style": "Deep, resonant masculine voice with a rich, warm texture. Cinematic autobiographical documentary narration. Speak as a mature Ethiopian man reflecting on his childhood memories. Use natural native Amharic pronunciation, measured pacing, gentle emotional emphasis, and meaningful pauses. Sound intimate, nostalgic, sincere and thoughtful. Avoid robotic delivery, exaggerated acting, newsreader intonation and excessive speed."
+  },
+  "music": {
+    "prompt": "Original Ethiopian-inspired cinematic instrumental score with gentle krar plucked strings, expressive masenqo textures, subtle percussion, spacious arrangement and a gradual emotional transition from nostalgia to hope",
+    "instrumental": true,
+    "bpm": 75,
+    "seed": 201,
+    "cues": [
+      {
+        "start_shot": "shot_001",
+        "end_shot": "shot_004",
+        "mood": "Reflective, nostalgic and slightly melancholic"
+      },
+      {
+        "start_shot": "shot_005",
+        "end_shot": "shot_007",
+        "mood": "Determined, gradually building with warmth"
+      },
+      {
+        "start_shot": "shot_008",
+        "end_shot": "shot_010",
+        "mood": "Hopeful, uplifting and emotionally resolved"
+      }
+    ]
+  },
+  "shots": [
+    {
+      "id": "shot_001",
+      "duration_seconds": 7,
+      "generation_duration_seconds": 5,
+      "reason": "Establish the rural environment where the story began",
+      "character_ids": [],
+      "image_prompt": "Wide establishing shot of a quiet Ethiopian farming village at sunrise, fields of green teff and wheat, modest rural houses, distant hills, soft golden morning light, peaceful but grounded atmosphere",
+      "motion_prompt": "Slow camera push forward, gentle wind moving the crops, subtle morning atmosphere",
+      "narration_text": "የእኔ ታሪክ የጀመረው በኢትዮጵያ ገጠር፣ በአንዲት ትንሽ የገበሬዎች መንደር ነው።",
+      "subtitle_en": "My story began in a small farming village in rural Ethiopia.",
+      "seed": 301
     },
-    "shots": [
-      {
-        "id": "shot_001",
-        "duration_seconds": 7,
-        "generation_duration_seconds": 5,
-        "reason": "Establish the rural environment where the story began",
-        "character_ids": [],
-        "image_prompt": "Wide establishing shot of a quiet Ethiopian farming village at sunrise, fields of green teff and wheat, modest rural houses, distant hills, soft golden morning light, peaceful but grounded atmosphere",
-        "motion_prompt": "Slow camera push forward, gentle wind moving the crops, subtle morning atmosphere",
-        "narration_text": "የእኔ ታሪክ የጀመረው በኢትዮጵያ ገጠር፣ በአንዲት ትንሽ የገበሬዎች መንደር ነው።",
-        "subtitle_en": "My story began in a small farming village in rural Ethiopia.",
-        "seed": 301
-      },
-      {
-        "id": "shot_002",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Introduce the protagonist and his relationship with his mother",
-        "character_ids": ["boy_child", "mother"],
-        "image_prompt": "Medium-wide rear three-quarter shot of a seven-year-old boy walking beside his mother along a narrow footpath toward green farmland, early morning sunlight, quiet intimate atmosphere, both subjects centrally composed",
-        "motion_prompt": "Mother and child walk slowly forward, clothing moves gently in the breeze, camera follows from behind",
-        "narration_text": "ገና የሰባት ዓመት ልጅ ሳለሁ፣ ከእናቴ ጋር በእርሻ ላይ ረጅም ቀናትን አሳልፍ ነበር።",
-        "subtitle_en": "At just seven years old, I spent long days working beside my mother in the fields.",
-        "seed": 302
-      },
-      {
-        "id": "shot_003",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Show the demanding manual agricultural labor that inspired the future goal",
-        "character_ids": ["boy_child", "mother"],
-        "image_prompt": "Intimate close-up of a child's and an adult woman's hands manually separating weeds from young teff plants, rich dark soil, realistic agricultural detail, afternoon sunlight, visible evidence of hard work",
-        "motion_prompt": "Hands gently remove a single weed from the soil, nearby crops sway slightly, camera remains steady",
-        "narration_text": "በትምህርት እረፍት ጊዜ አረም እናርም፣ ጤፍና ስንዴም እናጭድ ነበር። ሥራው እጅግ አድካሚ ነበር።",
-        "subtitle_en": "During school breaks, we pulled weeds and harvested teff and wheat. The work was exhausting.",
-        "seed": 303
-      },
-      {
-        "id": "shot_004",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Contrast agricultural hardship with the child's determination to learn",
-        "character_ids": ["boy_child"],
-        "image_prompt": "Medium close-up of a young Ethiopian boy studying from a worn notebook inside a modest rural home, warm evening light falling across his face and notebook, thoughtful focused expression",
-        "motion_prompt": "The boy slowly turns a notebook page, subtle breathing, gentle camera push toward the notebook",
-        "narration_text": "ሕይወታችን ቀላል ባይሆንም፣ ትምህርት የወደፊት ሕይወታችንን ሊለውጥ እንደሚችል አምን ነበር።",
-        "subtitle_en": "Life was not easy, but I believed education could change our future.",
-        "seed": 304
-      },
-      {
-        "id": "shot_005",
-        "duration_seconds": 9,
-        "generation_duration_seconds": 5,
-        "reason": "Honor the mother's sacrifices and introduce the emotional turning point",
-        "character_ids": ["mother", "boy_teenager"],
-        "image_prompt": "Emotional medium shot of an Ethiopian farming mother standing beside her teenage son outside their modest rural home, the student holding schoolbooks, mother's expression quietly proud and hopeful, natural warm daylight",
-        "motion_prompt": "Mother gently places a hand on her son's shoulder, subtle natural facial expression, steady camera",
-        "narration_text": "በስምንተኛ ክፍል ብሔራዊ ፈተና ከትምህርት ቤቴ አንደኛ ስወጣ፣ እናቴ ትምህርቴን እንድቀጥል የበለጠ መሥዋዕትነት ከፈለች።",
-        "subtitle_en": "When I ranked first in my school in the Grade 8 national exam, my mother sacrificed even more so I could continue studying.",
-        "seed": 305
-      },
-      {
-        "id": "shot_006",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Represent the transition from childhood to independent education",
-        "character_ids": ["boy_teenager"],
-        "image_prompt": "Wide cinematic rear view of a sixteen-year-old Ethiopian student carrying a worn backpack along a rural dirt road, village and agricultural fields behind him, distant hills ahead, soft morning sunlight",
-        "motion_prompt": "The student walks slowly away from the village, camera follows gently from behind",
-        "narration_text": "በአሥራ ስድስት ዓመቴ ለትምህርት ከመንደሬ ወጣሁ። በእረፍት ጊዜ ግን ወደ እርሻችን እመለስ ነበር።",
-        "subtitle_en": "At sixteen, I left my village to study. But during school breaks, I always returned to our farm.",
-        "seed": 306
-      },
-      {
-        "id": "shot_007",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Introduce the discovery of computer science and artificial intelligence",
-        "character_ids": ["adult_student"],
-        "image_prompt": "Young Ethiopian university student working at a desktop computer in a modest university computer laboratory in Addis Ababa, focused curious expression, soft screen illumination, realistic academic environment, neutral cinematic colors",
-        "motion_prompt": "Student types gently and looks thoughtfully at the computer screen, subtle camera push inward",
-        "narration_text": "በአዲስ አበባ ዩኒቨርሲቲ ኮምፒውተርን፣ ፕሮግራሚንግንና ሰው ሠራሽ አስተውሎትን ተዋወቅሁ።",
-        "subtitle_en": "At Addis Ababa University, I discovered computers, programming and artificial intelligence.",
-        "seed": 307
-      },
-      {
-        "id": "shot_008",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Connect artificial intelligence to the agricultural problem experienced in childhood",
-        "character_ids": [],
-        "image_prompt": "Cinematic macro view of cultivated green crop seedlings growing alongside distinct weeds in Ethiopian farmland, individual plants clearly visible, subtle conceptual computer vision outlines around selected plants, no readable text, imagined technological perspective",
-        "motion_prompt": "Slow camera movement across the plants, gentle leaf motion, subtle stable visual detection outlines",
-        "narration_text": "ለመጀመሪያ ጊዜ ማሳዎቻችንን በተለየ መንገድ ማየት ጀመርሁ። ቴክኖሎጂ አረምን ከሰብል ሊለይ ይችላል።",
-        "subtitle_en": "For the first time, I saw our fields differently. Technology could distinguish weeds from crops.",
-        "seed": 308
-      },
-      {
-        "id": "shot_009",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Illustrate the protagonist's imagined future for smallholder agriculture",
-        "character_ids": [],
-        "image_prompt": "Imagined future of Ethiopian smallholder agriculture, a compact practical agricultural robot designed for uneven rural farmland, moving between green crop rows, realistic engineering design, hopeful natural sunlight, conceptual future visualization",
-        "motion_prompt": "Small agricultural robot moves slowly along one crop row, gentle camera tracking, nearby leaves sway naturally",
-        "narration_text": "አረም የሚለዩና ሰብል ለማጨድ የሚያግዙ ማሽኖች፣ የገበሬዎችን ድካም ሲቀንሱ ማሰብ ጀመርሁ።",
-        "subtitle_en": "I imagined machines identifying weeds, helping harvest crops and reducing farmers' exhausting labor.",
-        "seed": 309
-      },
-      {
-        "id": "shot_010",
-        "duration_seconds": 8,
-        "generation_duration_seconds": 5,
-        "reason": "Return visually to the protagonist's roots and conclude with hope",
-        "character_ids": ["adult_student"],
-        "image_prompt": "Symbolic cinematic rear view of a young Ethiopian man overlooking the same kind of rural farmland where his childhood began, golden sunset, green fields stretching toward distant hills, quiet hopeful atmosphere, subject centered",
-        "motion_prompt": "Slow camera pull backward revealing the surrounding fields, gentle wind in the crops, warm sunset light",
-        "narration_text": "ጉዞዬ የጀመረው ከአፈር ነው። ሕልሜም በቴክኖሎጂ የቀጣዩን ትውልድ ጉዞ ቀላል ማድረግ ነው።",
-        "subtitle_en": "My journey began in the soil. My dream is to use technology to make the next generation's journey easier.",
-        "seed": 310
-      }
+    {
+      "id": "shot_002",
+      "duration_seconds": 8,
+      "generation_duration_seconds": 5,
+      "reason": "Introduce the protagonist and his relationship with his mother",
+      "character_ids": [
+        "boy_child",
+        "mother"
+      ],
+      "image_prompt": "Medium-wide rear three-quarter cinematic shot of a small seven-year-old Ethiopian boy walking beside his adult mother toward green farmland. The child is visibly much shorter and smaller than his mother, with narrow shoulders and a small childhood frame. Early morning sunlight, quiet intimate atmosphere, both subjects centrally composed.",
+      "motion_prompt": "Mother and child walk slowly forward, clothing moves gently in the breeze, camera follows from behind",
+      "narration_text": "ገና የሰባት ዓመት ልጅ ሳለሁ፣ ከእናቴ ጋር በእርሻ ላይ ረጅም ቀናትን አሳልፍ ነበር።",
+      "subtitle_en": "At just seven years old, I spent long days working beside my mother in the fields.",
+      "seed": 302
+    },
+    {
+      "id": "shot_003",
+      "duration_seconds": 9,
+      "generation_duration_seconds": 5,
+      "reason": "Show the demanding manual agricultural labor that inspired the future goal",
+      "character_ids": [
+        "boy_child",
+        "mother"
+      ],
+      "image_prompt": "Intimate close-up of a seven-year-old child's small hands and an adult woman's larger hands manually separating weeds from young teff plants. Clear visible difference in hand size. Rich dark soil, realistic agricultural detail, afternoon sunlight and evidence of hard work.",
+      "motion_prompt": "Hands gently remove a single weed from the soil, nearby crops sway slightly, camera remains steady",
+      "narration_text": "በትምህርት እረፍት ጊዜ አረም እናርም፣ ጤፍና ስንዴም እናጭድ ነበር። ሥራው እጅግ አድካሚ ነበር።",
+      "subtitle_en": "During school breaks, we pulled weeds and harvested teff and wheat. The work was exhausting.",
+      "seed": 303
+    },
+    {
+      "id": "shot_004",
+      "duration_seconds": 8,
+      "generation_duration_seconds": 5,
+      "reason": "Contrast agricultural hardship with the child's determination to learn",
+      "character_ids": [
+        "boy_child"
+      ],
+      "image_prompt": "A small seven-year-old Ethiopian schoolboy studying from a worn notebook inside a modest rural home. Clearly a young child, round face, small body, narrow shoulders, innocent focused expression. Warm evening light across his face and notebook.",
+      "motion_prompt": "The boy slowly turns a notebook page, subtle breathing, gentle camera push toward the notebook",
+      "narration_text": "ሕይወታችን ቀላል ባይሆንም፣ ትምህርት የወደፊት ሕይወታችንን ሊለውጥ እንደሚችል አምን ነበር።",
+      "subtitle_en": "Life was not easy, but I believed education could change our future.",
+      "seed": 304
+    },
+    {
+      "id": "shot_005",
+      "duration_seconds": 10,
+      "generation_duration_seconds": 5,
+      "reason": "Honor the mother's sacrifices and introduce the emotional turning point",
+      "character_ids": [
+        "mother",
+        "boy_teenager"
+      ],
+      "image_prompt": "Emotional medium shot of an Ethiopian farming mother standing beside her sixteen-year-old teenage son outside their modest rural home. The son is now tall and lean, noticeably older than the child in earlier scenes, with developed adolescent shoulders and longer facial proportions. He carries schoolbooks. His mother looks proud and hopeful. Natural warm daylight.",
+      "motion_prompt": "Mother gently places a hand on her son's shoulder, subtle natural facial expression, steady camera",
+      "narration_text": "በስምንተኛ ክፍል ብሔራዊ ፈተና ከትምህርት ቤቴ አንደኛ ስወጣ፣ እናቴ ትምህርቴን እንድቀጥል የበለጠ መሥዋዕትነት ከፈለች።",
+      "subtitle_en": "When I ranked first in my school in the Grade 8 national exam, my mother sacrificed even more so I could continue studying.",
+      "seed": 305
+    },
+    {
+      "id": "shot_006",
+      "duration_seconds": 8,
+      "generation_duration_seconds": 5,
+      "reason": "Represent the transition from childhood to independent education",
+      "character_ids": [
+        "boy_teenager"
+      ],
+      "image_prompt": "Wide cinematic full-body rear three-quarter view of a tall sixteen-year-old Ethiopian teenage male student carrying a worn backpack along a rural dirt road. Lean adolescent physique, long legs and youthful shoulders. Village and fields behind him, distant hills ahead, soft morning sunlight. Central composition.",
+      "motion_prompt": "The student walks slowly away from the village, camera follows gently from behind",
+      "narration_text": "በአሥራ ስድስት ዓመቴ ለትምህርት ከመንደሬ ወጣሁ። በእረፍት ጊዜ ግን ወደ እርሻችን እመለስ ነበር።",
+      "subtitle_en": "At sixteen, I left my village to study. But during school breaks, I always returned to our farm.",
+      "seed": 306
+    },
+    {
+      "id": "shot_007",
+      "duration_seconds": 8,
+      "generation_duration_seconds": 5,
+      "reason": "Introduce the discovery of computer science and artificial intelligence",
+      "character_ids": [
+        "adult_student"
+      ],
+      "image_prompt": "A physically mature twenty-two-year-old Ethiopian man working at a desktop computer in a university computer laboratory in Addis Ababa. Masculine angular face, strong jawline, subtle facial stubble, broad shoulders and athletic adult physique. Confident and focused expression. Medium waist-up composition, soft screen illumination, realistic academic environment.",
+      "motion_prompt": "Student types gently and looks thoughtfully at the computer screen, subtle camera push inward",
+      "narration_text": "በአዲስ አበባ ዩኒቨርሲቲ ኮምፒውተርን፣ ፕሮግራሚንግንና ሰው ሠራሽ አስተውሎትን ተዋወቅሁ።",
+      "subtitle_en": "At Addis Ababa University, I discovered computers, programming and artificial intelligence.",
+      "seed": 307
+    },
+    {
+      "id": "shot_008",
+      "duration_seconds": 9,
+      "generation_duration_seconds": 5,
+      "reason": "Connect artificial intelligence to the agricultural problem experienced in childhood",
+      "character_ids": [],
+      "image_prompt": "Cinematic macro view of cultivated green crop seedlings growing alongside distinct weeds in Ethiopian farmland, individual plants clearly visible, subtle conceptual computer vision outlines around selected plants, no readable text, imagined technological perspective",
+      "motion_prompt": "Slow camera movement across the plants, gentle leaf motion, subtle stable visual detection outlines",
+      "narration_text": "ለመጀመሪያ ጊዜ ማሳዎቻችንን በተለየ መንገድ ማየት ጀመርሁ። ቴክኖሎጂ አረምን ከሰብል ሊለይ ይችላል።",
+      "subtitle_en": "For the first time, I saw our fields differently. Technology could distinguish weeds from crops.",
+      "seed": 308
+    },
+    {
+      "id": "shot_009",
+      "duration_seconds": 8,
+      "generation_duration_seconds": 5,
+      "reason": "Illustrate the protagonist's imagined future for smallholder agriculture",
+      "character_ids": [],
+      "image_prompt": "Imagined future of Ethiopian smallholder agriculture, a compact practical agricultural robot designed for uneven rural farmland, moving between green crop rows, realistic engineering design, hopeful natural sunlight, conceptual future visualization",
+      "motion_prompt": "Small agricultural robot moves slowly along one crop row, gentle camera tracking, nearby leaves sway naturally",
+      "narration_text": "አረም የሚለዩና ሰብል ለማጨድ የሚያግዙ ማሽኖች፣ የገበሬዎችን ድካም ሲቀንሱ ማሰብ ጀመርሁ።",
+      "subtitle_en": "I imagined machines identifying weeds, helping harvest crops and reducing farmers' exhausting labor.",
+      "seed": 309
+    },
+    {
+      "id": "shot_010",
+      "duration_seconds": 9,
+      "generation_duration_seconds": 5,
+      "reason": "Return visually to the protagonist's roots and conclude with hope",
+      "character_ids": [
+        "adult_student"
+      ],
+      "image_prompt": "Powerful cinematic rear three-quarter view of a strong twenty-two-year-old Ethiopian adult man standing confidently overlooking the rural farmland where his childhood began. Tall athletic physique, broad masculine shoulders, strong arms and upright posture. Show part of his mature facial profile. Golden sunset, green fields extending toward distant hills. Quiet hopeful atmosphere, centered subject, emotionally powerful closing composition.",
+      "motion_prompt": "Slow camera pull backward revealing the surrounding fields, gentle wind in the crops, warm sunset light",
+      "narration_text": "ጉዞዬ የጀመረው ከአፈር ነው። ሕልሜም በቴክኖሎጂ የቀጣዩን ትውልድ ጉዞ ቀላል ማድረግ ነው።",
+      "subtitle_en": "My journey began in the soil. My dream is to use technology to make the next generation's journey easier.",
+      "seed": 310
+    }
+  ],
+  "export": {
+    "fps": 24,
+    "aspect_ratios": [
+      "9:16",
+      "16:9"
     ],
-    "export": {
-      "fps": 24,
-      "aspect_ratios": ["9:16", "16:9"],
-      "resolution": 1080,
-      "target_lufs": -14,
-      "true_peak_db": -1,
-      "end_card": {
-        "text": "Made with AI",
-        "duration_seconds": 3
-      }
+    "resolution": 1080,
+    "target_lufs": -14,
+    "true_peak_db": -1,
+    "end_card": {
+      "text": "Made with AI",
+      "duration_seconds": 3
     }
   }
-  
+}

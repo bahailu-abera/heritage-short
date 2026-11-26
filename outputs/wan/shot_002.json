@@ -1,0 +1,24 @@
+{
+  "shot_id": "shot_002",
+  "cache_key": "b6de748f3d07c3fef550347b497db75c276db3636e542dfa39206c3ddf023052",
+  "output_sha256": "343d07e7416cc471802266789fb68800838237fffd92711ced1c9b54bcb25e10",
+  "parameters": {
+    "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "width": 512,
+    "height": 288,
+    "num_frames": 49,
+    "fps": 16,
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "precision": "float16",
+    "vae_precision": "float32",
+    "offload_strategy": "sequential",
+    "prompt": "Medium-wide rear three-quarter cinematic shot of a small seven-year-old Ethiopian boy walking beside his adult mother toward green farmland. The child is visibly much shorter and smaller than his mother, with narrow shoulders and a small childhood frame. Early morning sunlight, quiet intimate atmosphere, both subjects centrally composed.. Mother and child walk slowly forward, clothing moves gently in the breeze, camera follows from behind. Preserve the original characters' ages, facial features, body proportions and clothing. Natural cinematic movement, consistent lighting, stable environment and realistic human motion.",
+    "negative_prompt": null,
+    "seed": 302,
+    "keyframe_sha256": "c5b240d18ab36d8d00496bcdecae6579678a16fbbefaa40c13310fc72dc12aa3",
+    "effective_seed": 302
+  },
+  "duration_seconds": 3.0625,
+  "backend": "wan"
+}

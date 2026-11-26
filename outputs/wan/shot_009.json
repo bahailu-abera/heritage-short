@@ -1,0 +1,24 @@
+{
+  "shot_id": "shot_009",
+  "cache_key": "c090a80eadd27152cde7f1d377b4b190f3c5debbf584a470603f7f47e86aacaa",
+  "output_sha256": "6f91b5907c7e7c9f66e91aff676558f3705ec360bb8e4832e1d5d5b904fa728f",
+  "parameters": {
+    "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "width": 512,
+    "height": 288,
+    "num_frames": 49,
+    "fps": 16,
+    "num_inference_steps": 10,
+    "guidance_scale": 1.0,
+    "precision": "float16",
+    "vae_precision": "float32",
+    "offload_strategy": "sequential",
+    "prompt": "Imagined future of Ethiopian smallholder agriculture, a compact practical agricultural robot designed for uneven rural farmland, moving between green crop rows, realistic engineering design, hopeful natural sunlight, conceptual future visualization. Small agricultural robot moves slowly along one crop row, gentle camera tracking, nearby leaves sway naturally. Preserve the original characters' ages, facial features, body proportions and clothing. Natural cinematic movement, consistent lighting, stable environment and realistic human motion.",
+    "negative_prompt": null,
+    "seed": 309,
+    "keyframe_sha256": "1c7702a30d42b66aa0ac54994987b4439ca0bf085db59c806ddd705b19c12e69",
+    "effective_seed": 309
+  },
+  "duration_seconds": 3.0625,
+  "backend": "wan"
+}
